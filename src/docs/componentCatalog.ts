@@ -1,0 +1,16 @@
+export const componentPages = [
+  { id: "alert", label: "Alert" },
+  { id: "app-bar", label: "AppBar" },
+  { id: "button", label: "Button" },
+  { id: "card", label: "Card" },
+  { id: "chip-and-chip-set", label: "Chip / ChipSet" },
+  { id: "dialog", label: "Dialog" },
+  { id: "data-grid", label: "DataGrid" },
+  { id: "field", label: "Field" },
+  { id: "numeric-field", label: "NumericField" },
+  { id: "radio-group", label: "RadioGroup & Radio" },
+  { id: "select", label: "Select" },
+  { id: "switch", label: "Switch" },
+  { id: "image", label: "Image" },
+  { id: "date-picker", label: "DatePicker" },
+]

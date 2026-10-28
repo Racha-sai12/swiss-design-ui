@@ -1,0 +1,9 @@
+.image {
+  display: block;
+  background: color-mix(in srgb, var(--text, #1c1917) 5%, var(--surface, #fff));
+}
+
+.image--fluid {
+  max-width: 100%;
+  height: auto;
+}

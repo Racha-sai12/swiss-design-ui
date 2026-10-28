@@ -1,0 +1,82 @@
+.numeric-field__control {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: stretch;
+  min-width: 0;
+}
+
+.numeric-field__input {
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+}
+
+.numeric-field__spin-buttons {
+  display: flex;
+  flex: 0 0 24px;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin-left: 4px;
+  border-left: 1px solid var(--border, #e7e5e4);
+}
+
+.numeric-field__spin-buttons button {
+  display: grid;
+  flex: 1 1 50%;
+  min-width: 24px;
+  min-height: 20px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: var(--text-muted, #78716c);
+  cursor: pointer;
+  font: inherit;
+  font-size: 8px;
+  line-height: 1;
+}
+
+.numeric-field__spin-buttons button:hover:not(:disabled),
+.numeric-field__clear:hover:not(:disabled) {
+  color: var(--accent-ink, #c8102e);
+}
+
+.numeric-field__spin-buttons button:disabled,
+.numeric-field__clear:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.numeric-field__spin-buttons button:focus-visible,
+.numeric-field__clear:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline: 2px solid var(--accent-ink, #c8102e);
+  outline-offset: -3px;
+}
+
+.numeric-field__clear {
+  display: grid;
+  flex: 0 0 32px;
+  width: 32px;
+  min-height: 40px;
+  margin-left: 2px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: var(--text-muted, #78716c);
+  cursor: pointer;
+  font: inherit;
+  font-size: 18px;
+}
+
+.field--disabled .numeric-field__spin-buttons,
+.field--disabled .numeric-field__clear {
+  pointer-events: none;
+}
+
+.field--margin-dense .numeric-field__spin-buttons {
+  flex-basis: 21px;
+}

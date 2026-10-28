@@ -1,0 +1,47 @@
+@import "./tokens.css";
+
+:root {
+  font-family: "IBM Plex Sans", "Hanken Grotesk", "Barlow", "Host Grotesk",
+    "DM Sans", system-ui, sans-serif;
+  color: #1c1917;
+  background: #fafaf9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: light dark;
+}
+
+:root[data-theme="dark"] {
+  color: #fafaf9;
+  background: #0c0a09;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color: #fafaf9;
+    background: #0c0a09;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: inherit;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
