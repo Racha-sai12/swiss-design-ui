@@ -75,6 +75,15 @@ embedded component styles, and TypeScript declarations) and the documentation
 site in `docs-dist/`.
 To preview the documentation build, run `npm run preview`.
 
+## Documentation site
+
+The documentation site deploys to GitHub Pages when changes are pushed to
+`main`. In the repository settings, open **Pages** and set the build and
+deployment source to **GitHub Actions**. After the workflow succeeds, the site
+will be available at:
+
+https://racha-sai12.github.io/swiss-design-ui/
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
